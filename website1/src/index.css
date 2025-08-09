@@ -1,0 +1,71 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@theme {
+  --color-white: white;
+}
+  .wrapper {
+    @apply h-[200px] w-[300px] rounded-2xl bg-gradient-to-b from-slate-600 to-slate-700 relative;
+  }
+
+  .wrapper::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: -4px;
+    border-radius: 20px;
+    background: conic-gradient(from var(--angle), transparent 50%, yellow);
+    animation: p linear 4s infinite;
+  }
+
+  @property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+  }
+  @keyframes p {
+    from {
+      --angle: 0deg;
+    }
+    to {
+      --angle: 360deg;
+    }
+  }
+
+
+
+
+.sign-up{
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+.sign-up::after {
+  --angle: 0deg;
+  content: "";
+  position: absolute;
+  inset: -3px;
+  border-radius: 20px;
+  z-index: -1;
+  background: conic-gradient(from var(--angle), transparent 20deg, #5f00ff);
+  animation: rotate 5s linear infinite;
+}
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+@keyframes rotate {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
+}
+@layer utilities {
+  * {
+    font-family: "Inter", sans-serif;
+    scroll-behavior: smooth;
+  }
+}
