@@ -4,7 +4,7 @@ import { IoClose } from "react-icons/io5";
 function Navbar() {
     const [open, setopen] = useState(false)
     return (
-        <div className="fixed z-20 top-5 w-full">
+        <div className="fixed z-10 top-5 w-full">
             <div className='max-w-6xl mx-auto h-20'>
                 <div className="flex items-center justify-between gap-5 w-full h-full bg-white/5 backdrop-blur-2xl rounded-full px-10">
                     <h1 className="text-white text-[28px] font-semibold">SOLVE.</h1>
