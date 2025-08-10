@@ -9,8 +9,6 @@ function Header() {
   return (
     <>
       <div className='bg-[url(./images/header.svg)] bg-cover bg-no-repeat min-h-[120vh] isolate w-full pt-28'>
-      <div className="wrapper">
-        </div>
         <div className="max-w-6xl mx-auto min-h-full flex flex-col items-center justify-end gap-14">
           <div className="flex w-full items-center justify-center gap-4 flex-col">
             <h1 className="text-[22px] text-white">Welcome to Solve.</h1>
