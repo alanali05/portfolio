@@ -3,7 +3,7 @@ import React from 'react'
 function Alan() {
   return (
     <div>
-      hello world
+      hello world2
     </div>
   )
 }
